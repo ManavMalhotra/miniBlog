@@ -3,7 +3,9 @@ const path = require('path');
 const articleRoute = require('./routes/article.js');
 const mongoose = require('mongoose');
 const articleSchema = require('./models/schema.js');
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
+
+let port = process.env.PORT || 3000;
 
 let url = 'mongodb+srv://admin:admin@cluster0.ovyh48b.mongodb.net/?retryWrites=true&w=majority';
 
@@ -33,4 +35,4 @@ app.get('/',async (req,res)=>{
 
 })
 
-app.listen(3000)
+app.listen(port)
