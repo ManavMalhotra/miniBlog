@@ -7,7 +7,7 @@ const methodOverride = require('method-override');
 
 let port = process.env.PORT || 3000;
 
-let url = 'mongodb+srv://admin:admin@cluster0.ovyh48b.mongodb.net/?retryWrites=true&w=majority';
+let url = '//MONGODB URI HERE';
 
 mongoose.connect(url);
 let db = mongoose.connection;
